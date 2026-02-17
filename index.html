@@ -251,56 +251,59 @@
     </div>
   </section>
 
-  <!-- Dataset Section -->
-  <section class="section">
+    <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">EgoPoseVR Dataset</h2>
 
-      <!-- Dataset Description -->
-      <div class="content" style="margin-bottom: 2rem; font-size: 1.05rem;">
-        
-        <h4><strong>Overview</strong></h4>
-        <ul>
-          <li><strong>Motions:</strong> 2,350 (Sourced from the AMASS dataset)</li>
-          <li><strong>Scenes:</strong> 8 UE5 environments × 30 representative locations + 100 HDR images</li>
-          <li><strong>Outfits:</strong> 100 garments + 20 shoes</li>
-          <li><strong>Generated Sequences:</strong> 18,235</li>
-          <li><strong>Generated Frames:</strong> 1.8 million (60 FPS)</li>
-        </ul>
+      <div class="columns is-variable is-6" style="margin-bottom: 2rem;">
 
-        <h4><strong>Annotations</strong></h4>
-        <ul>
-          <li>Temporal RGB-D egocentric downward-facing images</li>
-          <li>Temporal 3D position and rotation of the VR headset and hand controllers</li>
-          <li>Temporal 3D position and rotation of SMPL-based pelvis (camera-centered joints)</li>
-          <li>Temporal 2D joint positions in egocentric RGB images</li>
-          <li>Structural parameters of the employed SMPL model</li>
-          <li>Egocentric camera intrinsics and camera-to-head extrinsics</li>
-        </ul>
+        <!-- LEFT COLUMN -->
+        <div class="column">
+          <h4 class="title is-5"><strong>Overview</strong></h4>
+          <div class="content">
+            <ul>
+              <li><strong>Motions:</strong> 2,350 (from AMASS)</li>
+              <li><strong>Scenes:</strong> 8 UE5 environments × 30 locations + 100 HDR images</li>
+              <li><strong>Outfits:</strong> 100 garments + 20 shoes</li>
+              <li><strong>Generated Sequences:</strong> 18,235</li>
+              <li><strong>Generated Frames:</strong> 1.8M (60 FPS)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="column">
+          <h4 class="title is-5"><strong>Annotations</strong></h4>
+          <div class="content">
+            <ul>
+              <li>Temporal RGB-D egocentric downward-facing images</li>
+              <li>3D pose of VR headset & controllers</li>
+              <li>SMPL pelvis & camera-centered joint poses (3D)</li>
+              <li>2D joint projections in RGB images</li>
+              <li>SMPL structural parameters</li>
+              <li>Camera intrinsics & head extrinsics</li>
+            </ul>
+          </div>
+        </div>
 
       </div>
 
-      <!-- Video -->
+      <!-- VIDEO -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <div class="publication-video">
+          <video 
+            controls 
+            preload="metadata"
+            style="width: 100%; aspect-ratio: 16 / 9; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
             
-            <video 
-              controls 
-              preload="metadata"
-              style="width: 100%; aspect-ratio: 16 / 9; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-              
-              <source src="./static/videos/Dataset.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            
-            </video>
-
-          </div>
+            <source src="./static/videos/Dataset.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
 
     </div>
   </section>
+
 
   <!-- Citation Section -->
   <section class="section" id="BibTeX">

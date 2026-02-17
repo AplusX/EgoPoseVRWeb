@@ -305,6 +305,75 @@
   </section>
 
 
+    <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+
+      <!-- Table 7 (A–J) summary above the figure -->
+      <div class="box" style="margin-top: 1rem; margin-bottom: 1.25rem;">
+        <p class="has-text-weight-semibold" style="margin-bottom: 0.75rem;">
+          Table 7. Evaluated configurations (A–J)
+        </p>
+
+        <div class="columns is-variable is-6">
+          <!-- Left column: A–E (competitors + hybrids) -->
+          <div class="column">
+            <p class="is-size-6 has-text-weight-semibold" style="margin-bottom: 0.5rem;">
+              Competitor methods (A–E)
+            </p>
+            <div class="content" style="margin-top: 0;">
+              <ul style="margin-top: 0;">
+                <li><strong>A:</strong> EgoPoser</li>
+                <li><strong>B:</strong> EgoPoser + EgoPoseFormer</li>
+                <li><strong>C:</strong> Proposed HMD + EgoPoseFormer</li>
+                <li><strong>D:</strong> Proposed HMD + Proposed RGB (M)</li>
+                <li><strong>E:</strong> EgoPoseVR (HMD + RGB-D (M) + KPO)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right column: F–J (ablations) -->
+          <div class="column">
+            <p class="is-size-6 has-text-weight-semibold" style="margin-bottom: 0.5rem;">
+              Ablation settings (F–J)
+            </p>
+            <div class="content" style="margin-top: 0;">
+              <ul style="margin-top: 0;">
+                <li><strong>F:</strong> Proposed HMD Only</li>
+                <li><strong>G:</strong> Proposed HMD + Proposed RGB (S)</li>
+                <li><strong>H:</strong> Proposed HMD + Proposed RGB (M)</li>
+                <li><strong>I:</strong> Proposed HMD + Proposed RGB-D (M)</li>
+                <li><strong>J:</strong> EgoPoseVR (HMD + RGB-D (M) + KPO)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="is-size-7 has-text-grey" style="margin-top: 0.25rem;">
+          Identical color highlights denote identical configurations shared across different evaluation contexts.
+        </p>
+      </div>
+
+      <!-- Figure -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <img src="./static/images/QualitativeResults.jpg" alt="Qualitative Results"
+            style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        </div>
+      </div>
+
+      <!-- Caption below the figure -->
+      <p class="is-size-7 has-text-grey" style="margin-top: 0.75rem; line-height: 1.5;">
+        <strong>Caption.</strong> Qualitative results comparing competitor methods (left column, A–E)
+        with the ablation study (right column, F–J). Each row illustrates the same motion for direct comparison.
+        In each subfigure, the leftmost blue avatar denotes the ground truth, while the remaining five avatars
+        from left to right correspond to configurations A–E (for the competitor comparison) and F–J (for the ablation study).
+        Pose errors are visualized relative to the ground truth, with deeper red indicating larger deviations.
+      </p>
+    </div>
+  </section>
+
+
   <!-- Citation Section -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
